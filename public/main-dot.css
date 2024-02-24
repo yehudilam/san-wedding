@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Parisienne';
+    /* src: url('webfont.eot'); IE9 Compat Modes */
+    /* src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+         /* Modern Browsers */
+         /* url('webfont.woff') format('woff'),  */
+
+         /* Safari, Android, iOS */
+    src: url('Parisienne-Regular.ttf') format('truetype'); 
+         
+         /* Legacy iOS */
+         /* url('webfont.svg#svgFontName') format('svg');  */
+  }
+
+.logo-wrapper{
+    /* text-align: center; */
+    font-family: 'Parisienne';
+    font-size: 3.5rem;
+    position: relative;
+    height: 300px;
+    text-align: center;
+}
+
+.flower-logo>img{
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.text-logo{
+    margin: 0 -15px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+@media (max-width: 400px){
+    .logo-wrapper{
+        font-size: 3.2rem;
+        height: 280px;
+    }
+
+    .text-logo{
+        top: 220px;
+    }
+}
+
+@media (max-width: 320px){
+    .logo-wrapper{
+        font-size: 2.8rem;
+        height: 80px;
+    }
+}
+
+.logo-kitty{
+    display: inline-block;
+    /* margin-right: 40px; */
+}
+
+.logo-yehudi{
+    display: inline-block;
+}
+
+.logo-bird{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    /* position: absolute; */
+    top: -10px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+.clear{
+    width: 100%;
+    clear: both;
+}
+
+.program-row{
+    margin-bottom: 24px;
+}
+
+.map-row{
+    margin-bottom: 48px;
+}
+
+.title-date{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.address-time{
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.program-center-row{
+    text-align: center;
+}
+
+.program-item-head{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    flex: 0 1 auto;
+}
+
+.program-header-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.program-header-fill{
+    flex: 1 1 auto;
+    border-top: 1px dotted #222;
+    transform: translateY(50%);
+    margin: 0 16px;
+}
+.people{
+    flex: 0 1 auto;
+    font-size: 1.2rem;
+}
+
+.program-item-body-wrap{
+    white-space: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.program-item-body-wrap.program-item-body-wrap-show{
+    white-space: normal;
+}
+
+.program-item-wrapper{
+    max-width: 80%;
+    color: #444;
+}
+
+.program-wrapper{
+    max-width: 70%;
+}
+
+.program-item-body-item{
+    margin-bottom: 20px;
+}
+
+.program-item-body-item-header{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.hidden{
+    display: none;
+}
+
+.church-announcement{
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+}
+
+.program-lyrics-more{
+    display: none;
+}
+
+.program-item-body-wrap, .program-lyrics-wrap{
+    cursor: pointer;
+}
+
+.program-lyrics-wrap-show .program-lyrics-more{
+    display: block;
+}
+
+.program-lyrics-wrap .program-lyrics-first-row::after{
+    content: "...";
+}
+
+
+.program-lyrics-wrap.program-lyrics-wrap-show .program-lyrics-first-row::after{
+    content: "";
+}
+
+.program-lyrics-first-row{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.program-lyrics-wrap-show .program-lyrics-first-row{
+    white-space: normal;
+}
+
+.separator{
+    height: 1px;
+    background-color: #E6E6E6; /* lighter grey */
+    width: 100%;
+    margin: 0 16px;
+}
+
+ol.photo-content-list{
+    padding-left: 24px;
+}
+
+.map-wrapper{
+    margin: 8px 0;
+}
+
+.verses{
+    display: inline;
+}
+.verses-number{
+    display: inline;
+    font-size: 0.9rem;
+}

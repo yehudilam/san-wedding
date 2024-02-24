@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Parisienne';
+    /* src: url('webfont.eot'); IE9 Compat Modes */
+    /* src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+         /* Modern Browsers */
+         /* url('webfont.woff') format('woff'),  */
+
+         /* Safari, Android, iOS */
+    src: url('Parisienne-Regular.ttf') format('truetype'); 
+         
+         /* Legacy iOS */
+         /* url('webfont.svg#svgFontName') format('svg');  */
+  }
+
+.logo-wrapper{
+    /* text-align: center; */
+    font-family: 'Parisienne';
+    font-size: 3.5rem;
+    position: relative;
+    height: 150px;
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .logo-wrapper{
+        font-size: 3.2rem;
+        height: 100px;
+    }
+}
+
+@media (max-width: 320px){
+    .logo-wrapper{
+        font-size: 2.8rem;
+        height: 80px;
+    }
+}
+
+.logo-kitty{
+    display: inline-block;
+    /* margin-right: 40px; */
+}
+
+.logo-yehudi{
+    display: inline-block;
+}
+
+.logo-bird{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    /* position: absolute; */
+    top: -10px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+.clear{
+    width: 100%;
+    clear: both;
+}
+
+.program-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.title-date{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.program-center-row{
+    text-align: center;
+}
+
+.program-item-head{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.people{
+    font-size: 1.2rem;
+}
+
+.program-item-body-wrap{
+    white-space: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.program-item-body-wrap.program-item-body-wrap-show{
+    white-space: normal;
+}
+
+.program-wrapper{
+    max-width: 70%;
+}
+
+.program-item-body-item{
+    margin-bottom: 10px;
+}
+
+.program-item-body-item-header{
+    font-weight: 600;
+}
+
+.hidden{
+    display: none;
+}
