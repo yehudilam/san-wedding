@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "kittyyehudi"
+  },
+  "targets": {
+    "kittyyehudi": {
+      "hosting": {
+        "mango-jackson": [
+          "mango-jackson"
+        ]
+      }
+    }
+  }
+}
