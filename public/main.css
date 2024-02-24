@@ -15,10 +15,10 @@
 .logo-wrapper{
     /* text-align: center; */
     font-family: 'Parisienne';
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
     position: relative;
     text-align: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .flower-logo>img{
@@ -71,12 +71,12 @@
 }
 
 .logo-bird{
-    display: inline-block;
+    /* display: inline-block; */
     width: 30px;
     height: 30px;
-    position: relative;
+    /* position: relative; */
     /* position: absolute; */
-    top: -10px;
+    /* top: -10px; */
     /* left: 50%; */
     /* transform: translateX(-50%); */
 }
@@ -219,9 +219,9 @@
     margin: 0 16px;
 }
 
-ol.photo-content-list{
+/* ol.photo-content-list{
     padding-left: 24px;
-}
+} */
 
 .map-wrapper{
     margin: 8px 0;
@@ -235,7 +235,7 @@ ol.photo-content-list{
     font-size: 0.9rem;
 }
 
-.cover, .main-image{
+/* .cover, .main-image{
     height: 100vh;
     width: 100%;
     min-height: 600px;
@@ -252,7 +252,7 @@ ol.photo-content-list{
     transform: translateX(-53%) rotate(-1deg);
     left: 50%;
     position: relative;
-}
+} */
 
 .cover-title{
     position: relative;
@@ -272,10 +272,10 @@ ol.photo-content-list{
     top: 0;
     bottom: unset;
     transform: none;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     z-index: 1000;
-    padding: 10px;
-    margin: 0 -15px;
+    padding: 16px;
+    /* margin: 0 -15px; */
     background-image: url(./flower-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -296,14 +296,14 @@ ol.photo-content-list{
     }
 }
 
-.staff-type {
+/* .staff-type {
     display: inline-block;
     margin-right: 10px;
 }
 
 .staff-name {
     display: inline-block;
-}
+} */
 
 .staff-content-item {
     text-align: center;
