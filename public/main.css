@@ -81,7 +81,7 @@
     /* transform: translateX(-50%); */
 }
 
-.clear{
+/* .clear{
     width: 100%;
     clear: both;
 }
@@ -92,7 +92,7 @@
 
 .map-row{
     margin-bottom: 48px;
-}
+} */
 
 .title-date{
     text-align: center;
@@ -107,7 +107,7 @@
     text-align: center;
 }
 
-.program-center-row{
+/* .program-center-row{
     text-align: center;
 }
 
@@ -173,9 +173,9 @@
 
 .hidden{
     display: none;
-}
+} */
 
-.church-announcement{
+/* .church-announcement{
     margin-bottom: 16px;
     font-size: 0.85rem;
     text-align: center;
@@ -214,16 +214,16 @@
 
 .separator{
     height: 1px;
-    background-color: #E6E6E6; /* lighter grey */
+    background-color: #E6E6E6; 
     width: 100%;
     margin: 0 16px;
-}
+} */
 
 /* ol.photo-content-list{
     padding-left: 24px;
 } */
 
-.map-wrapper{
+/* .map-wrapper{
     margin: 8px 0;
 }
 
@@ -233,7 +233,7 @@
 .verses-number{
     display: inline;
     font-size: 0.9rem;
-}
+} */
 
 /* .cover, .main-image{
     height: 100vh;
@@ -314,4 +314,18 @@
 .cover-image {
     max-width: unset;
     height: 100vh;
+}
+
+/* @media (max-width: 900px){
+    .cover-image{
+        position: relative;
+    }
+} */
+
+/* todo: change to aspect ratio: */
+@media (max-width: 500px){
+    .cover-image{
+        position: relative;
+        right: 120px;
+    }
 }

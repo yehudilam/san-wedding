@@ -1,0 +1,22 @@
+[debug] [2024-02-26T12:01:11.529Z] ----------------------------------------------------------------------
+[debug] [2024-02-26T12:01:11.539Z] Command:       /Users/yehudilam/.nvm/versions/node/v20.9.0/bin/node /Users/yehudilam/.nvm/versions/node/v20.9.0/bin/firebase deploy --only hosting:mango-jackson
+[debug] [2024-02-26T12:01:11.539Z] CLI Version:   13.0.3
+[debug] [2024-02-26T12:01:11.540Z] Platform:      darwin
+[debug] [2024-02-26T12:01:11.540Z] Node Version:  v20.9.0
+[debug] [2024-02-26T12:01:11.540Z] Time:          Mon Feb 26 2024 12:01:11 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-02-26T12:01:11.540Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-26T12:01:11.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-26T12:01:11.604Z] > authorizing via signed-in user (yehudi1992@gmail.com)
+[debug] [2024-02-26T12:01:11.604Z] [iam] checking project kittyyehudi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-26T12:01:11.605Z] > refreshing access token with scopes: []
+[debug] [2024-02-26T12:01:11.606Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-26T12:01:11.607Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-26T12:01:11.786Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-26T12:01:11.786Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-26T12:01:11.919Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kittyyehudi:testIamPermissions [none]
+[debug] [2024-02-26T12:01:11.919Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kittyyehudi:testIamPermissions x-goog-quota-user=projects/kittyyehudi
+[debug] [2024-02-26T12:01:11.919Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kittyyehudi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-26T12:01:12.639Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kittyyehudi:testIamPermissions 200
+[debug] [2024-02-26T12:01:12.639Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kittyyehudi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-26T12:01:12.640Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kittyyehudi [none]

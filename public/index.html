@@ -63,7 +63,7 @@
     </div>
 
     <div class="w-full h-screen">
-      <div class="flex justify-center item-center bg-teal-200 w-full h-full overflow-hidden">
+      <div class="flex justify-center item-center w-full h-full overflow-hidden">
         <img class="cover-image" src='./cover.jpg' alt="Mango and Jackson's wedding" />
       </div>
     </div>
@@ -86,49 +86,93 @@
         <div class="text-3xl font-bold w-full text-center mb-4 underline underline-offset-4">
           <h2>主禮團</h2>
         </div>
-        <div class="flex flex-col flex-wrap w-full h-28">
-          <div class="">
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">主席:</div>
-              <div class="staff-name">陳駿豪弟兄</div>
+        <div class="flex flex-col sm:flex-wrap w-full sm:h-28 justify-center">
+          <!-- mobile: -->
+          <div class="sm:hidden m-auto">
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">主席:</div>
+              <div class="">陳駿豪弟兄</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">祈禱:</div>
-              <div class="staff-name">張露牧師</div>
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">祈禱:</div>
+              <div class="">張露牧師</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">讀經:</div>
-              <div class="staff-name">李雋瑋弟兄</div>
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">讀經:</div>
+              <div class="">李雋瑋弟兄</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">證婚:</div>
-              <div class="staff-name">馮天聰牧師</div>
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">證婚:</div>
+              <div class="">馮天聰牧師</div>
             </div>
-          </div>
-
-          <div class="">
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">和唱:</div>
-              <div class="staff-name">林黃君頤姊妹</div>
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">和唱:</div>
+              <div class="">林黃君頤姊妹</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">主婚:</div>
-              <div class="staff-name">葉健宗先生 <br />
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">主婚:</div>
+              <div class="">葉健宗先生 <br />
                 馮潤培先生</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">訓勉及祝福:</div>
-              <div class="staff-name">林偉明牧師</div>
+            <div class="flex justify-satrt gap-2">
+              <div class="w-24 shrink-0">訓勉及祝福:</div>
+              <div class="">林偉明牧師</div>
             </div>
 
-            <div class="w-full flex justify-center gap-2">
-              <div class="staff-type">司琴:</div>
-              <div class="staff-name">梁昕彤姊妹</div>
+            <div class="flex justify-start gap-2">
+              <div class="w-24 shrink-0">司琴:</div>
+              <div class="">梁昕彤姊妹</div>
+            </div>
+          </div>
+
+          <!-- sm and above -->
+          <div class="m-auto hidden sm:block">
+            <div class="w-full flex justify-start gap-2">
+              <div class="sm:w-10 w-24 shrink-0">主席:</div>
+              <div class="">陳駿豪弟兄</div>
+            </div>
+
+            <div class="w-full flex justify-start gap-2">
+              <div class="sm:w-10 w-24 shrink-0">祈禱:</div>
+              <div class="">張露牧師</div>
+            </div>
+
+            <div class="w-full flex justify-start gap-2">
+              <div class="sm:w-10 w-24 shrink-0">讀經:</div>
+              <div class="">李雋瑋弟兄</div>
+            </div>
+
+            <div class="w-full flex justify-start gap-2">
+              <div class="sm:w-10 w-24 shrink-0">證婚:</div>
+              <div class="">馮天聰牧師</div>
+            </div>
+          </div>
+
+          <div class="m-auto hidden sm:block">
+            <div class="w-full flex justify-start gap-2">
+              <div class="w-24 shrink-0">和唱:</div>
+              <div class="">林黃君頤姊妹</div>
+            </div>
+
+            <div class="w-full flex justify-start gap-2">
+              <div class="w-24 shrink-0">主婚:</div>
+              <div class="">葉健宗先生 <br />
+                馮潤培先生</div>
+            </div>
+
+            <div class="w-full flex justify-satrt gap-2">
+              <div class="w-24 shrink-0">訓勉及祝福:</div>
+              <div class="">林偉明牧師</div>
+            </div>
+
+            <div class="w-full flex justify-start gap-2">
+              <div class="w-24 shrink-0">司琴:</div>
+              <div class="">梁昕彤姊妹</div>
             </div>
           </div>
 
@@ -142,16 +186,6 @@
         </div>
 
         <div class="w-full">
-          <!-- <div class="col-sm-12 program-row">
-                          <div class="program-header-row">
-                              <div class="program-item-head">
-                                  序樂
-                              </div>
-                              <div class="program-header-fill"></div>
-                              <div class="people">司琴</div>
-                          </div>
-                      </div> -->
-
           <article class="mb-8">
             <div class="flex justify-between">
               <div class="text-2xl font-bold grow-0">
@@ -287,7 +321,7 @@
               眾坐
             </div>
             <!-- class="mt-3" -->
-            <div> 
+            <div>
               <div class="mb-3">
                 兩個人總比一個人好，因為二人勞碌同得美好的果效。 <br />
                 <h4 class="mt-1">傳道書 4:9 </h4>
