@@ -265,23 +265,6 @@
     transform: none;
 }
 
-.affix-title{
-    border-bottom: 1px solid #e6e6e6;
-    position: fixed;
-    background: white;
-    top: 0;
-    bottom: unset;
-    transform: none;
-    font-size: 1.6rem;
-    z-index: 1000;
-    padding: 16px;
-    /* margin: 0 -15px; */
-    background-image: url(./flower-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .staff-content{
     display: flex;
     flex-direction: column;
@@ -308,4 +291,27 @@
 .staff-content-item {
     text-align: center;
     min-width: 50%;
+}
+
+/* ONLY KEEP BELOW: */
+.affix-title{
+    border-bottom: 1px solid #e6e6e6;
+    position: fixed;
+    background: white;
+    top: 0;
+    bottom: unset;
+    transform: none;
+    font-size: 1.6rem;
+    z-index: 1000;
+    padding: 16px;
+    /* margin: 0 -15px; */
+    background-image: url(./flower-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cover-image {
+    max-width: unset;
+    height: 100vh;
 }
