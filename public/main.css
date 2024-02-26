@@ -312,20 +312,15 @@
 }
 
 .cover-image {
-    max-width: unset;
-    height: 100vh;
+    /* max-width: unset; */
+    /* height: 100vh; */
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: left 50% top 80%;
 }
-
-/* @media (max-width: 900px){
-    .cover-image{
-        position: relative;
-    }
-} */
 
 /* todo: change to aspect ratio: */
 @media (max-width: 500px){
-    .cover-image{
-        position: relative;
-        right: 120px;
-    }
+    /* object position bottom when aspect ration is over a certain value */
 }
