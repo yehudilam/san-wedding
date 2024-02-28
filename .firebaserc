@@ -7,6 +7,9 @@
       "hosting": {
         "mango-jackson": [
           "mango-jackson"
+        ],
+        "mango-jackson-next": [
+          "mango-jackson-next"
         ]
       }
     }
