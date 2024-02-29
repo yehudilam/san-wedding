@@ -1,3 +1,19 @@
+
+## How this project works
+- Next SSG, deploy the built SSG files to firebase
+- Only one page available
+- Data retrieved from `./data/data.yaml`
+
+## Deploying to firebase:
+next branch:
+`firebase deploy --only hosting:mango-jackson-next`
+
+normal branch:
+`firebase deploy --only hosting:mango-jackson`
+
+
+----
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

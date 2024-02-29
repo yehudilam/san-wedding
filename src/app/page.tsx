@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Cover from "../app/cover.jpg";
-import Flower from "../app/flower-2.jpg";
-import Birds from "../app/Love-Birds-II.svg";
 import Program from "../app/components/Program";
 import Footer from "../app/components/Footer";
 import Pic from "../app/components/Pic";
@@ -30,7 +28,7 @@ export default function Home() {
         <div className="p-2 md:p-4">
           <section className="w-full mb-16 mt-16">
             <div className="w-full text-center text-5xl mb-1">
-              <h1>葉俊燊 & 馮琪軫</h1>
+              <h1>{items.chineseNames[0]} & {items.chineseNames[1]}</h1>
             </div>
             <div className="w-full text-center text-4xl">
               <h2>結婚典禮</h2>

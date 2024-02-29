@@ -6,8 +6,8 @@ const SimpleRow = (program: { title: string; pic: string; state: string }) => {
           <h3>{program.title}</h3>
         </div>
         <div className="grow shrink flex-col px-3">
-          <div className="h-1/2 h-50 w-full border-dotted border-b border-gray-600"></div>
-          <div className="h-1/2 h-50 w-full"></div>
+          <div className="h-1/2 w-full border-dotted border-b border-gray-600"></div>
+          <div className="h-1/2 w-full"></div>
         </div>
         <div className="text-xl">{program.pic}</div>
       </div>

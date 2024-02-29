@@ -32,23 +32,6 @@ body {
   } */
 }
 
-.affix-title {
-  border-bottom: 1px solid #e6e6e6;
-  position: fixed;
-  background: white;
-  top: 0;
-  bottom: unset;
-  transform: none;
-  font-size: 1.6rem;
-  z-index: 1000;
-  padding: 16px;
-  /* margin: 0 -15px; */
-  /* background-image: url(./flower-2.jpg); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .cover-image {
   /* max-width: unset; */
   /* height: 100vh; */
@@ -63,8 +46,40 @@ body {
   /* object position bottom when aspect ration is over a certain value */
 }
 
+.logo-bird{
+  height: 30px;
+  width: 30px;
+}
+
 .address-time {
   margin-bottom: 16px;
   font-size: 1.1rem;
   text-align: center;
+}
+
+.flower-logo>img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.text-logo {
+  position: absolute;
+  bottom: 0;
+}
+
+.affix-title {
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  background: white;
+  top: 0;
+  bottom: unset;
+  transform: none;
+  font-size: 1.6rem;
+  z-index: 1000;
+  padding: 12px;
+  /* margin: 0 -15px; */
+  background-image: url('/flower-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

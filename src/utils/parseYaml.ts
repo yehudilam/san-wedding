@@ -4,6 +4,7 @@ import YAML from "yaml";
 
 export interface WeddingData {
   names: string[];
+  chineseNames: string[];
   location: string;
   date: string;
   Pic: PicSection;
