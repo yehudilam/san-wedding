@@ -20,8 +20,8 @@ export async function generateMetadata(){
       url: 'https://mango-jackson.web.app/',
       title,
       description,
-      images: [Cover],
-      ['image:alt']: 'Mango and Jackson\'s wedding',
+      images: ['https://mango-jackson.web.app/cover.jpg'],
+      // ['image:alt']: 'Mango and Jackson\'s wedding',
     },
   }
 }
