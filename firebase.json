@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "mango-jackson-next",
+    "target": "mango-jackson",
     "public": "out",
     "ignore": [
       "firebase.json",

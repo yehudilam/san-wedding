@@ -6,6 +6,7 @@ import Pic from "../app/components/Pic";
 import PhotoOrder from "../app/components/PhotoOrder";
 import { WeddingData, getItem } from "@/utils/parseYaml";
 import FrontPage from "./components/FrontPage";
+import Head from "next/head";
 
 export default function Home() {
   const items: WeddingData = getItem();
@@ -13,6 +14,9 @@ export default function Home() {
   return (
     <>
       <main className="w-full">
+      <Head>
+        <title>{`${items.names[0]} - ${items.names[1]} 結婚典禮 ${items.date}`}</title>
+      </Head>
         <FrontPage items={items} />
 
         <div className="w-full h-screen">
