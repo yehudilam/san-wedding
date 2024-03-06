@@ -1,13 +1,13 @@
 const Footer = () => {
   return (
     <footer className="w-full p-2">
-      <div className="">
-        <div className="text-3xl font-bold w-full text-center mb-4 underline underline-offset-4">
+      {/* <div className=""> */}
+        {/* <div className="text-3xl font-bold w-full text-center mb-4 underline underline-offset-4">
           <h2>如何前往</h2>
-        </div>
+        </div> */}
 
-        <div className="">
-          <div className="mb-4">
+        {/* <div className=""> */}
+          {/* <div className="mb-4">
             <h3 className="text-xl font-bold">巴士</h3>
             <div></div>
           </div>
@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="mb-4">
             <h3 className="text-xl font-bold">鐵路</h3>
             <div></div>
-          </div>
+          </div> */}
 
           <div className="mb-4">
             <h3 className="text-xl font-bold">地址</h3>
@@ -33,8 +33,8 @@ const Footer = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </footer>
   );
 };

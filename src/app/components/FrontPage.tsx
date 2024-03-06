@@ -31,11 +31,12 @@ const FrontPage = ({ items,
           <div className="flower-logo w-full flex justify-center">
             <Image src={Flower} alt="flower" />
           </div>
-          <div className={`text-logo flex justify-center items-center gap-4 w-full ${stickyHeader && 'affix-title'}`}>
+          {/* flex flex-col sm:flex-row sm:gap-4 */}
+          <div className={`text-logo justify-center items-center w-full ${stickyHeader && 'affix-title'}`}>
             <div className={`logo-name1 ${parisienne.className}`}>
               {items.names[0]}
             </div>
-            <div className="logo-bird">
+            <div className="logo-bird flex">
               <Image src={Birds} alt="birds" width={30} height={30} />
             </div>
             <div className={`logo-name2 ${parisienne.className}`}>{items.names[1]}</div>
