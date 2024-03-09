@@ -24,6 +24,23 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const openModal = () => {
+    // Disables Background Scrolling whilst the SideDrawer/Modal is open
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "hidden";
+    }
+
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "scroll";
+    }
+
+    setShowModal(false);
+  };
+
   return (
     <div className="w-full h-screen">
       <div className="relative h-screen w-full flex flex-col justify-center cover-title-1">
@@ -53,10 +70,11 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
           </div>
         </div>
 
-{/* todo: aria-modal && aria-hidden */}
+        {/* todo: aria-modal && aria-hidden */}
         <div className="absolute top-4 right-4">
           <button
-            onClick={() => setShowModal((v) => !v)}
+            onClick={openModal}
+            aria-label="Share this site: QR Code and site link"
             className="border-2 border-gray-300 rounded-lg p-3 cursor-pointer hover:bg-gray-100"
           >
             <svg
@@ -78,12 +96,16 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
 
         <div
           className={`${showModal ? "fixed" : "hidden"} top-0 left-0 bg-gray-600 bg-opacity-50 w-full h-screen flex justify-center items-center z-50 shadow-lg`}
-          onClick={() => setShowModal(false)}
+          onClick={closeModal}
           aria-hidden={!showModal}
           aria-modal
         >
           <div className="bg-white p-8 rounded-lg border-2 border-gray-300 relative">
-            <div className="absolute right-2 top-2 cursor-pointer hover:bg-gray-100">
+            <button
+              onClick={closeModal}
+              aria-label="Close modal"
+              className="absolute right-2 top-2 cursor-pointer hover:bg-gray-100"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -98,7 +120,7 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
                   d="M6 18 18 6M6 6l12 12"
                 />
               </svg>
-            </div>
+            </button>
             <div>
               {/* todo: chinese version */}
               <h2 className="font-bold text-2xl mb-4">Share this site:</h2>
@@ -108,7 +130,12 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
                   src={QrCode}
                   alt="QR code for https://mango-jackson.web.app"
                 />
-                <a href="https://mango-jackson.web.app" className="text-blue-800">
+
+                {/* todo: change to click and copy */}
+                <a
+                  href="https://mango-jackson.web.app"
+                  className="text-blue-800"
+                >
                   https://mango-jackson.web.app
                 </a>
               </div>
