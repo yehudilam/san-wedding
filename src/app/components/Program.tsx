@@ -1,6 +1,4 @@
-import {
-  ProgramType,
-} from "@/utils/parseYaml";
+import { ProgramType } from "@/utils/parseYaml";
 import SimpleRow from "./Program/SimpleRow";
 import Hymn from "./Program/Hymn";
 import Verses from "./Program/Verses";
