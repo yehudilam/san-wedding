@@ -7,6 +7,7 @@ import { WeddingData } from "@/utils/parseYaml";
 import { Parisienne } from "next/font/google";
 import { useEffect, useState } from "react";
 import QrCode from "../../../public/mango-jackson.png";
+import CopySiteLink from "./CopySiteLink";
 
 const parisienne = Parisienne({ subsets: ["latin"], weight: "400" });
 
@@ -100,7 +101,7 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
           aria-hidden={!showModal}
           aria-modal
         >
-          <div className="bg-white p-8 rounded-lg border-2 border-gray-300 relative">
+          <div className="bg-white px-8 pt-8 pb-4 rounded-lg border-2 border-gray-300 relative">
             <button
               onClick={closeModal}
               aria-label="Close modal"
@@ -121,23 +122,16 @@ const FrontPage = ({ items }: { items: WeddingData }) => {
                 />
               </svg>
             </button>
-            <div>
+            <div onClick={(e) => e.stopPropagation()}>
               {/* todo: chinese version */}
-              <h2 className="font-bold text-2xl mb-4">Share this site:</h2>
+              <h2 className="font-bold text-2xl mb-6">Share this site:</h2>
               <div className="flex w-full justify-center flex-col items-center">
                 <Image
-                  className="mb-4"
+                  className="mb-6"
                   src={QrCode}
                   alt="QR code for https://mango-jackson.web.app"
                 />
-
-                {/* todo: change to click and copy */}
-                <a
-                  href="https://mango-jackson.web.app"
-                  className="text-blue-800"
-                >
-                  https://mango-jackson.web.app
-                </a>
+                <CopySiteLink />
               </div>
             </div>
           </div>
