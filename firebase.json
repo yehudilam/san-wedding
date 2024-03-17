@@ -2,6 +2,10 @@
   "hosting": {
     "target": "mango-jackson",
     "public": "out",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
