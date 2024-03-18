@@ -21,6 +21,7 @@ export async function generateMetadata() {
       title,
       description,
       images: ["https://mango-jackson.web.app/cover.jpg"],
+      type: 'website',
       // ['image:alt']: 'Mango and Jackson\'s wedding',
     },
   };
